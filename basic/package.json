@@ -1,0 +1,41 @@
+{
+  "name": "google.com",
+  "version": "0.0.1",
+  "description": "A sample of Adrian's Selenium work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spurty007/demo.git"
+  },
+  "keywords": [
+    "Selenium",
+    "work"
+  ],
+  "author": "Adrian Lewis",
+  "email": "adelewis@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Spurty007/demo/issues"
+  },
+  "homepage": "https://github.com/Spurty007/demo#readme",
+  "dependencies": {
+    "@wdio/cli": "^5.4.17",
+    "@wdio/dot-reporter": "^5.4.15",
+    "@wdio/jasmine-framework": "^5.4.14",
+    "@wdio/junit-reporter": "^5.4.15",
+    "@wdio/local-runner": "^5.4.17",
+    "@wdio/spec-reporter": "^5.4.15",
+    "assert": "^1.4.1",
+    "chromedriver": "^2.46.0",
+    "firefox": "0.0.1",
+    "jasmine": "^3.3.1",
+    "png-crop": "0.0.2",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "update": "^0.7.4",
+    "wdio-chromedriver-service": "^5.0.0",
+    "webdriverio": "^5.4.17"
+  }
+}
