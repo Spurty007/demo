@@ -4,7 +4,9 @@ Selenium stand up and test
 ## Common needs
 The following commands make no assumptions of your OS. They assume you have `git` and `npm` installed and these tools are in your PATH
 
-   * `git clone https://github.com/Spurty007/demo.git`
+   * In a clean directory, you have run `git clone https://github.com/Spurty007/demo.git`
+
+After this you stay in the current working directory to continue (as per your OS).
 
 ## Windows:
 
