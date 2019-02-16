@@ -32,6 +32,7 @@
     "chromedriver": "^2.46.0",
     "events": "^3.0.0",
     "firefox": "0.0.1",
+    "gecko": "0.0.0",
     "jasmine": "^3.3.1",
     "png-crop": "0.0.2",
     "selenium-webdriver": "^4.0.0-alpha.1",
