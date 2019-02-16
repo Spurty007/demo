@@ -30,6 +30,7 @@
     "@wdio/spec-reporter": "^5.4.15",
     "assert": "^1.4.1",
     "chromedriver": "^2.46.0",
+    "events": "^3.0.0",
     "firefox": "0.0.1",
     "jasmine": "^3.3.1",
     "png-crop": "0.0.2",
