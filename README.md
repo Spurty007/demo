@@ -47,4 +47,17 @@ cd .
 wdio config/wdio.conf.js
 ```
 
-##
+## Mac
+
+Assumptions: 
+   * Visit https://www.seleniumhq.org/download/ 
+   * Click Download link
+   * Place `selenium-server-standalone-3.141.59.jar` in /tmp
+
+```
+cd demo/basic
+npm install
+cd .
+#Mac.StartSelenium.sh // TBD
+wdio config/wdio.conf.js
+```
