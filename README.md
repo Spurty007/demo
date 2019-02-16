@@ -1,12 +1,36 @@
-# Demo code from Adrian Lewis
+# Demo code 
+Selenium stand up and test 
 
-Demonstration code for 'whoever needs it'.
+## Common needs
+The following commands make no assumptions of your OS. They assume you have `git` and `npm` installed and these tools are in your PATH
 
-## Selenium Standup and test of Google.com:
-The code here is designed to be OS agnostic where possible. Obviously, not always possible.
+   * In a clean directory, you have run `git clone https://github.com/Spurty007/demo.git`
+
+After this you stay in the current working directory to continue (as per your OS).
+
+## Windows:
+
+Assumptions: 
+   * `selenium-server-standalone-3.141.59.jar` is sitting in \temp
 
 ```
+cd demo\basic
 npm install
-wdio config/wdio.conf.js
+cd ..
+Win.StartSelenium.bat
+node_modules\.bin\wdio config\wdio.conf.js
+
 ```
 
+## Unix:
+
+Assumptions: 
+   * `selenium-server-standalone-3.141.59.jar` is sitting in /tmp
+
+```
+cd demo/basic
+npm install
+wdio config/Unix.wdio.conf.js
+```
+
+##

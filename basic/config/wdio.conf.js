@@ -8,18 +8,8 @@ exports.config = {
             './tests/**/*.js'
     ],
     capabilities: [
-       /*
-        // Ignored Docker - enough headaches with 'mature stuff'
-        { browserName: 'internet explorer' }, // Probably fixable
-        { browserName: 'phantomjs' }, // Probably fixable
-        { browserName: 'edge' }, // Probably fixable
-        { browserName: 'opera' }, // Probably fixable
-        { browserName: 'safari' }, // Runs on Mac (sometimes)
-        { browserName: 'appium' }, // Probably fixable
-       */
        { browserName: 'firefox' }, 
        { browserName: 'chrome' }
-
     ],
     logLevel: 'error',
     coloredLogs: true,
