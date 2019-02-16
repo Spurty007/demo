@@ -11,7 +11,9 @@ After this you stay in the current working directory to continue (as per your OS
 ## Windows:
 
 Assumptions: 
-   * `selenium-server-standalone-3.141.59.jar` is sitting in \temp
+   * Visit https://www.seleniumhq.org/download/ 
+   * Click Download link
+   * Place `selenium-server-standalone-3.141.59.jar` in \temp
 
 ```
 cd demo\basic
@@ -25,12 +27,16 @@ node_modules\.bin\wdio config\wdio.conf.js
 ## Unix:
 
 Assumptions: 
-   * `selenium-server-standalone-3.141.59.jar` is sitting in /tmp
+   * Visit https://www.seleniumhq.org/download/ 
+   * Click Download link
+   * Place `selenium-server-standalone-3.141.59.jar` in /tmp
 
 ```
 cd demo/basic
 npm install
-wdio config/Unix.wdio.conf.js
+cd .
+#Unix.StartSelenium.sh // TBD
+wdio config/wdio.conf.js
 ```
 
 ##
