@@ -5,7 +5,7 @@
 var debug = process.env.DEBUG;
 debug=true;
 var assert = require('assert');
-var defaultTimeoutInterval = 200;
+var defaultTimeoutInterval = 20000;
 let context={};
 
 exports.config = {
@@ -16,11 +16,11 @@ exports.config = {
   logLevel: 'error',  // trace | debug | info | warn | error | silent
   logOutput: './logs/logging.log',
   coloredLogs: true,
-  waitforTimeout: 200,
-  baseUrl: 'https://google.com',
+  waitforTimeout: 20000,
+  baseUrl: 'http://google.com',
   framework: 'jasmine',
   reporters: ['spec','dot',['junit', { outputDir: './results', errorOptions: { error: 'message', failure: 'message', stacktrace: 'stack' }  }], ],
-  jasmineNodeOpts: { defaultTimeoutInterval: 200,  expectationResultHandler: function(passed, assertion) { } },
+  jasmineNodeOpts: { defaultTimeoutInterval: 20000,  expectationResultHandler: function(passed, assertion) { } },
   maxInstances: 1,
   onPrepare: function()           { },
   before: function()              { },
