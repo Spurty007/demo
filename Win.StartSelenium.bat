@@ -6,7 +6,7 @@ SET "fullstamp=%YYYY%-%MM%-%DD%_%HH%-%Min%-%Sec%"
 
 CD basic
 
-START java -Dwebdriver.chrome.driver=%CD%\node_modules\.bin\chromedriver.exe ^
--Dwebdriver.gecko.driver=%CD%\node_modules\.bin\geckodriver.exe ^
+START java -Dwebdriver.chrome.driver=C:\apps\nodejs\drivers\chromedriver.exe ^
+-Dwebdriver.gecko.driver=C:\apps\nodejs\drivers\geckodriver.exe ^
 -jar \temp\selenium-server-standalone-3.141.59.jar -log %TMP%\selenium-%fullstamp%.log
 ECHO logging to %TMP%\selenium-%fullstamp%.log
