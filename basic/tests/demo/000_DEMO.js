@@ -1,43 +1,28 @@
-var URL='http://google.com';
+var URL='https://google.com/ncr';
 const assert = require('assert');
-const url = require('url');
 
 describe('#001 TESTS', function(){
-
   it('#001-01 Navigate to http://google.com', function()
   {
-    browser.url(URL);
-    
+    browser.url(URL);    
   });
 
   it('#001-02 Check title = "Google"', function()
   {
-    var GetTitle = browser.getTitle().then(function(promisedResult)
+    var GetTitle = browser.getTitle().then(function(promised)
     {
-      assert.equal(promisedResult, 'Google');
-      return promisedResult;
+      assert.equal(promised, 'Google');
+      return promised;
     })
   });
 
   it('#001-03 Check title != "CHEESE"', function()
   {
-    var GetTitle = browser.getTitle().then(function(promisedResult)
+    var GetTitle = browser.getTitle().then(function(promised)
     {
-      assert.notEqual(promisedResult, 'CHEESE');
-      return promisedResult;
+      assert.notEqual(promised, 'CHEESE');
+      return promised;
     })
   });
 
-  it('#001-04 Search on Google', function()
-  {
-     /*
-      We've opened the URL, so now we need to access the browser object
-      
-      But, how? No examples outside of that GetTitle one
-     
-     */
-     var url = new url("https://anonymous:flabada@developer.mozilla.org/en-US/docs/Web/API/URL/username");
-     var user = url.username; // Returns:'anonymous'
-     
-  });
 });

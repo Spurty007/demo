@@ -3,9 +3,11 @@
 */
 var debug = process.env.DEBUG;
 debug=true;
-var assert = require('assert');
+//let BasePage = require( '../objects/pages/base.page' );
 var defaultTimeoutInterval = 20000;
 let context={};
+
+var assert = require('assert');
 
 exports.config = {
   host: 'localhost',
