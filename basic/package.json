@@ -4,7 +4,7 @@
   "description": "A sample of Adrian's Selenium work",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "./node_modules/.bin/wdio wdio.conf.js"
   },
   "repository": {
     "type": "git",
