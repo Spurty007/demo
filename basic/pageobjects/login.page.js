@@ -1,4 +1,3 @@
-// login.page.js
 import Page from './page';
 
 class LoginPage extends Page {

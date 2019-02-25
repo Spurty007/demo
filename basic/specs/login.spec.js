@@ -1,4 +1,3 @@
-// login.spec.js
 import { expect } 'chai';
 import LoginPage '../pageobjects/login.page';
 
