@@ -23,6 +23,7 @@ Assumptions:
    * Visit https://www.seleniumhq.org/download/ 
    * Click Download link
    * Place `selenium-server-standalone-3.141.59.jar` in \temp
+   * You already ran `npm install --global --production windows-build-tools` (expect system to reboot)
 
 ```
 cd demo\basic
