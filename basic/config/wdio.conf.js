@@ -13,7 +13,7 @@ exports.config = {
   port: 4444,
   specs: [ './tests/**/*.test.js' ],
   capabilities: [ {maxInstances: 5,browserName: 'firefox' }, { maxInstances: 5,browserName: 'chrome' } ],
-  logLevel: 'trace', 
+  logLevel: 'silent', 
   outputDir: './logs',
   coloredLogs: true,
   waitforTimeout: 20000,
