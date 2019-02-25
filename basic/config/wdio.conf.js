@@ -3,7 +3,6 @@
 */
 var debug = process.env.DEBUG;
 debug=true;
-//let BasePage = require( '../objects/pages/base.page' );
 var defaultTimeoutInterval = 20000;
 let context={};
 
@@ -20,8 +19,6 @@ exports.config = {
   baseUrl: 'https://www.google.com',
   framework: 'jasmine',
   reporters: ['spec','dot',['junit', { outputDir: './logs', errorOptions: { error: 'message', failure: 'message', stacktrace: 'stack' }  }], ],
-  //reporters: ['spec'],
-  //reporters: ['dot'],
   jasmineNodeOpts: { defaultTimeoutInterval: 20000,  expectationResultHandler: function(passed, assertion) { } },
   maxInstances: 2,
   onPrepare: function()           { },
