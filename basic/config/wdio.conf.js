@@ -1,8 +1,8 @@
 /*
       History         : AML demo
 */
-var debug = process.env.DEBUG;
-debug=true;
+const debug = process.env.DEBUG;
+DEBUG=true;
 var defaultTimeoutInterval = 20000;
 let context={};
 
@@ -11,9 +11,11 @@ var assert = require('assert');
 exports.config = {
   host: 'localhost',
   port: 4444,
-  specs: [ './tests/**/*.test.js' ],
+  //specs: [ './tests/**/*.test.js' ],
+  specs: [__dirname + '/specs/dynamic.spec.js'],
   capabilities: [ {maxInstances: 5,browserName: 'firefox' }, { maxInstances: 5,browserName: 'chrome' } ],
-  logLevel: 'silent', 
+  logLevel: 'trace', 
+  outputDir: './logs',
   coloredLogs: true,
   waitforTimeout: 20000,
   baseUrl: 'https://www.google.com',
