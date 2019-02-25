@@ -1,8 +1,8 @@
 /*
       History         : AML demo
 */
-const debug = process.env.DEBUG;
-DEBUG=true;
+var debug = process.env.DEBUG;
+debug=true;
 var defaultTimeoutInterval = 20000;
 let context={};
 
