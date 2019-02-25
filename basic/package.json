@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Spurty007/demo#readme",
   "dependencies": {
+    "protractor": "^5.4.2",
     "url": "^0.11.0"
   },
   "devDependencies": {
