@@ -11,8 +11,8 @@ var assert = require('assert');
 exports.config = {
   host: 'localhost',
   port: 4444,
-  //specs: [ './tests/**/*.test.js' ],
-  specs: [__dirname + '/specs/dynamic.spec.js'],
+  specs: [ './tests/**/*.test.js' ],
+  //specs: [__dirname + '/specs/dynamic.spec.js'],
   capabilities: [ {maxInstances: 5,browserName: 'firefox' }, { maxInstances: 5,browserName: 'chrome' } ],
   logLevel: 'trace', 
   outputDir: './logs',

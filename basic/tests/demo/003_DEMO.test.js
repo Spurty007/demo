@@ -1,7 +1,7 @@
 var URL='https://google.com';
 const assert = require('assert');
 
-describe("#003 Page Object Model in Protractor",function()
+describe("#003 Page Object Model",function()
 {
   browser.ignoreSynchronization = true; 
   it("#003-01 Search Google",function()
