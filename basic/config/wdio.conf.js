@@ -19,7 +19,7 @@ exports.config = {
   waitforTimeout: 20000,
   baseUrl: 'https://www.google.com',
   framework: 'jasmine',
-  reporters: ['spec','dot',['junit', { outputDir: './logs', errorOptions: { error: 'message', failure: 'message', stacktrace: 'stack' }  }], ],
+  reporters: ['spec','dot',['junit', { outputDir: './logs', errorOptions: { error: 'message', failure: 'message', stacktrace: 'stack' }  }] ],
   jasmineNodeOpts: { defaultTimeoutInterval: 20000,  expectationResultHandler: function(passed, assertion) { } },
   maxInstances: 2,
   onPrepare: function()           { },
