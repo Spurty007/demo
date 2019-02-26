@@ -63,3 +63,12 @@ cd .
 #Mac.StartSelenium.sh // TBD
 wdio config/wdio.conf.js
 ```
+
+## Debugging stuff
+Looks like in December 2018, wdio became @wdio and a load of things broke.
+
+We now get a 'Promise' back with `browser.url` and this breaks expects. Need to do things correctly now. 
+
+For debugging I'm currently using `wdio repl chrome` 
+
+From here I do a `browser.url('https://google.com')` and now I can use this promise to start driving around with say `const about=$$('#hptl > a:nth-child(1)')` to select the 'About' link. Now, clicking it should be `about.click()` but that returns an error ... gah!
