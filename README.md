@@ -1,5 +1,5 @@
 # Demo code 
-Selenium stand up and test 
+Selenium stand up and test using Webdriverio version 4 (not 5)
 
 ## Common needs
 The following commands make no assumptions of your OS. 
@@ -27,7 +27,8 @@ Assumptions:
 
 ```
 cd demo\basic
-npm install
+npm i
+npm i webdriverio@4
 cd ..
 Win.StartSelenium.bat
 node_modules\.bin\wdio config\wdio.conf.js
@@ -43,10 +44,11 @@ Assumptions:
 
 ```
 cd demo/basic
-npm install
+npm i
+npm i webdriverio@4
 cd .
 #Unix.StartSelenium.sh // TBD
-wdio config/wdio.conf.js
+./node_modules/.bin/wdio config/wdio.conf.js
 ```
 
 ## Mac
@@ -58,17 +60,11 @@ Assumptions:
 
 ```
 cd demo/basic
-npm install
+npm i
+npm i webdriverio@4
 cd .
 #Mac.StartSelenium.sh // TBD
-wdio config/wdio.conf.js
+./node_modules/.bin/wdio config/wdio.conf.js
 ```
 
-## Debugging stuff
-Looks like in December 2018, wdio became @wdio and a load of things broke.
 
-We now get a 'Promise' back with `browser.url` and this breaks expects. Need to do things correctly now. 
-
-For debugging I'm currently using `wdio repl chrome` 
-
-From here I do a `browser.url('https://google.com')` and now I can use this promise to start driving around with say `const about=$$('#hptl > a:nth-child(1)')` to select the 'About' link. Now, clicking it should be `about.click()` but that returns an error ... gah!
