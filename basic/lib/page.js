@@ -1,5 +1,10 @@
 class page {
-    getPage() { return browser.url(url); }
+
+    open(path='') {
+        var url = path;
+        return browser.url(url);
+    }
 }
 
-module.exports = new page();
+
+module.exports = page;
