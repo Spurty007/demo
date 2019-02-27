@@ -46,9 +46,9 @@
     "wdio-allure-reporter": "",
     "wdio-cucumber-framework": "",
     "wdio-dot-reporter": "0.0.10",
+    "wdio-jasmine-framework": "^0.3.8",
     "wdio-json-reporter": "^0.4.0",
     "wdio-junit-reporter": "^0.4.4",
-    "wdio-spec-reporter": "^0.1.5",
-    "wdio-jasmine-framework": "^0.3.8"
+    "wdio-spec-reporter": "^0.1.5"
   }
 }
