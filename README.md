@@ -31,7 +31,7 @@ npm i
 npm i webdriverio@4
 cd ..
 Win.StartSelenium.bat
-node_modules\.bin\wdio config\wdio.conf.js
+.\node_modules\.bin\wdio config\wdio.conf.js
 
 ```
 
